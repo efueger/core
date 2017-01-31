@@ -1,8 +1,8 @@
 ---
-prepare:
-  fetch:
-  - url: "https://gist.githubusercontent.com/infertux/cdd2ccc6e0a0cd94f458/raw"
-    path: ".rubocop.yml"
+# prepare:
+#  fetch:
+#  - url: "https://gist.githubusercontent.com/infertux/cdd2ccc6e0a0cd94f458/raw"
+#    path: ".rubocop.yml"
 
 engines:
   brakeman:
