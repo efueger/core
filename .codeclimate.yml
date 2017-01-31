@@ -1,8 +1,8 @@
 ---
-# prepare:
-#  fetch:
-#  - url: "https://gist.githubusercontent.com/infertux/cdd2ccc6e0a0cd94f458/raw"
-#    path: ".rubocop.yml"
+prepare:
+ fetch:
+ - url: "https://gist.githubusercontent.com/infertux/cdd2ccc6e0a0cd94f458/raw"
+   path: ".rubocop_code_climate.yml"
 
 engines:
   brakeman:
@@ -27,6 +27,8 @@ engines:
     enabled: false
   rubocop:
     enabled: true
+    config:
+      file: .rubocop_code_climate.yml
 ratings:
   paths:
   - Gemfile.lock
