@@ -1,0 +1,119 @@
+# inherit_from:
+#  - https://gist.githubusercontent.com/infertux/cdd2ccc6e0a0cd94f458/raw
+
+AllCops:
+  TargetRubyVersion: 2.2
+
+Rails:
+  Enabled: true
+
+Rails/Date:
+  Enabled: false # FIXME
+
+Rails/TimeZone:
+  Enabled: false # FIXME
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/OutputSafety:
+  Enabled: false
+
+Rails/ScopeArgs:
+  Enabled: false # TODO: remove when Rails 4
+
+Rails/Validation:
+  Enabled: false
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/UselessAssignment:
+  Exclude: ["config/compass.rb", "spec/**/*"]
+
+Lint/UselessAccessModifier:
+  Enabled: false # TODO
+
+Lint/IneffectiveAccessModifier:
+  Enabled: false # TODO
+
+Lint/UnifiedInteger:
+  Enabled: false
+
+Style/AccessorMethodName:
+  Enabled: false
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/ClassVars:
+  Enabled: false # TODO
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IndentationWidth:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/Next:
+  Enabled: false # TODO
+
+Style/PredicateName:
+  Enabled: false # TODO
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/IfInsideElse:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: false
+
+Style/For:
+  Enabled: false # TODO
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/SingleLineMethods:
+  Enabled: false
+
+Style/StructInheritance:
+  Enabled: false
+
+Style/ExtraSpacing:
+  AllowForAlignment: true
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/VariableNumber:
+  Enabled: false
+
+Performance/TimesMap:
+  Exclude: ["spec/**/*"]
+
+Performance/RedundantMerge:
+  Enabled: false
